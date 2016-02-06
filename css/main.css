@@ -8,17 +8,17 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Avenir Light', Helvetica, sans-serif;
+  letter-spacing: -1px;
   font-size: 1.25em;
-  color: white;
+  color: #202020;
 }
 
 header {
   height: 100%;
-  background: #0f6cfb; /* fallback for old browsers */
-  background: linear-gradient(45deg, rgba(45, 155, 214, 0.8), rgba(53, 61, 137, 0.8)), url('../img/cover.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background: linear-gradient(45deg, rgba(45, 155, 214, 0.8), rgba(53, 61, 137, 0.8));
   background-size: cover;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   display: flex;
 }
 
@@ -46,6 +46,7 @@ header .container p {
 #mc_signup_form input {
   padding: 10px;
   border: none;
+  background: #f5f5f5;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   outline: none;
@@ -59,7 +60,7 @@ header .container p {
 }
 
 .mc_signup_button {
-  background: rgba(256, 256, 256, 0.1);
+  background: rgba(36, 46, 152, 1);
   padding: 10px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -69,7 +70,6 @@ header .container p {
   color: white;
 }
 .mc_signup_button:hover {
-  background: rgba(256, 256, 256, 0.2);
   cursor: pointer;
 }
 
