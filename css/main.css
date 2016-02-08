@@ -129,6 +129,15 @@ section h1 {
   padding: 20px;
 }
 
+#sponsors img {
+  opacity: 0.8;
+}
+
+#sponsors img:hover {
+  opacity: 1;
+}
+
+
 #sponsors ul.partners img {
   max-width: 120px;
 }
