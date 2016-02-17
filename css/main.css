@@ -1,20 +1,45 @@
 @font-face {
   font-family: 'Avenir Light';
-  src: url('/fonts/AvenirNext-UltraLight.ttf') format('truetype');
+  src: url('/fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('/fonts/Avenir-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('/fonts/Avenir-Book.ttf') format('truetype');
 }
 
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+}
+
+body {
   font-family: 'Avenir Light', Helvetica, sans-serif;
-  letter-spacing: -1px;
   font-size: 1.25em;
   color: #404040;
+  letter-spacing: -0.02rem;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 25px auto;
+}
+
+.heavy {
+  font-family: 'Avenir Heavy';
+  color: #41c4ff;
 }
 
 #particles {
@@ -23,28 +48,65 @@ a {
   position: absolute;
 }
 
+nav {
+  width: 100%;
+  padding: 5px;
+  max-height: 50px;
+  color: white;
+  background: rgba(25, 60, 140, 0.95);
+  position: fixed;
+  top: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding-left: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 5px 15px;
+  opacity: 0.75;
+}
+
+nav ul li:hover {
+  opacity: 1;
+}
+
 header {
   height: 100%;
-  display: flex;
+  background: linear-gradient(45deg, rgba(10, 140, 200, 0.5), rgba(20, 30, 130, 0.5)), url('/img/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow:hidden;
 }
 
 header .container {
+  width: 80%;
   margin: auto;
-  text-align: center;
-  position: relative;
-  z-index: 10;
+  padding-top: 12%;
+  color: white;
 }
 
-header .container img {
+header h1 {
+  font-family: 'Avenir Heavy', Helvetica, sans-serif;
+  font-size: 5.5em;
+  letter-spacing: -0.2rem;
+  margin: auto;
+  line-height: 1.2em;
+  padding: 0;
+}
+
+header img {
   max-width: 300px;
 }
 
-header .container p {
-  margin: 15px;
-}
-
-#mc_signup_form {
-  text-align: center;
+header p {
+  margin: 0.5em;
 }
 
 #mc_signup_form div {
@@ -54,34 +116,38 @@ header .container p {
 #mc_signup_form input {
   padding: 10px;
   border: none;
-  background: #f9f9f9;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  background: #fafafa;
   outline: none;
-  opacity: 0.6;
+  opacity: 0.5;
+  border-radius: 3px;
   font-family: 'Avenir Light';
-  font-size: 1em;
+  font-size: 1.25em;
+  letter-spacing: inherit;
 }
 
 #mc_signup_form input:focus {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .mc_signup_button {
-  background: rgba(36, 46, 152, 1);
-  padding: 10px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  margin-left: -7px;
+  background: rgba(105, 203, 251, 0.2);
+  border-radius: 3px;
+  padding: 0.5em;
+  position: relative;
+  z-index: 10;
 }
 .mc_signup_button .fa {
   color: white;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 5px;
 }
 .mc_signup_button:hover {
   cursor: pointer;
+  background: rgba(105, 203, 251, 0.4);
 }
 
-#mc_signup_form input, #mc_signup_form input:focus, .mc_signup_button, .mc_signup_button:hover {
+*, *:hover {
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
@@ -90,13 +156,15 @@ header .container p {
 ul.social {
   padding-left: 0;
   margin: auto;
+  padding: 10px;
 }
 
 ul.social li {
   display: inline-block;
-  color: #202020;
+  color: inherit;
   opacity: 0.8;
   padding: 10px;
+  font-size: 1.25em;
 }
 
 ul.social li:hover {
@@ -105,14 +173,59 @@ ul.social li:hover {
 
 section {
   background: white;
+  padding: 50px;
 }
 
 section .container {
+  width: 80%;
   margin: auto;
+  padding: 20px;
 }
 
 section h1 {
   font-size: 2em;
+  text-align: center;
+  font-weight: normal;
+}
+
+section a {
+  color: #41c4ff;
+  border-bottom: 1px dotted #21a2ef;
+}
+
+#about {
+  text-align: center;
+}
+
+#about img {
+  width: 175px;
+}
+
+#about p {
+  max-width: 500px;
+  margin: auto;
+}
+
+#faq {
+  background: linear-gradient(-45deg, rgba(10, 140, 200, 0.9), rgba(20, 30, 130, 0.9));
+  color: white;
+  text-align: center;
+}
+
+#faq ul {
+  list-style-type: none;
+}
+
+#faq ul li {
+  width: 500px;
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 20px;
+  text-align: left;
+}
+
+#faq h3 {
+  font-family: 'Avenir Heavy';
 }
 
 #sponsors {
@@ -126,7 +239,7 @@ section h1 {
 }
 #sponsors li {
   display: inline-block;
-  padding: 20px;
+  padding: 1em;
 }
 
 #sponsors img {
@@ -137,13 +250,52 @@ section h1 {
   opacity: 1;
 }
 
-
 #sponsors ul.partners img {
-  max-width: 120px;
+  max-width: 150px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(45deg, rgba(10, 80, 160, 0.5), rgba(10, 80, 160, 0.5)), url('/img/cover.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  font-size: 0.75em;
+}
+
+footer ul.social {
+  padding: 0px;
+}
+footer ul.social li {
+  padding-top: 0px;
+}
+footer p a {
+  border-bottom: 1px dotted white;
 }
 
 @media screen and (max-width: 800px) {
-  header .container img.title {
-    max-width: 250px;
+  html, body {
+    font-size: 1em;
+    letter-spacing: -0.01rem;
+  }
+  header {
+    height: auto;
+  }
+  header input, .fa {
+    font-size: 1em;
+  }
+  header h1 {
+    font-size: 3em;
+    letter-spacing: -0.08rem;
+  }
+  header .container {
+    padding-top: 100px;
+  }
+  section {
+    padding: 10px;
+  }
+  section .container {
+    width: 90%;
   }
 }
