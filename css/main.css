@@ -290,6 +290,9 @@ footer p a {
     font-size: 3em;
     letter-spacing: -0.08rem;
   }
+  nav {
+    width: 100%;
+  }
   header .container {
     padding-top: 100px;
   }
@@ -308,6 +311,7 @@ footer p a {
   }
   section {
     padding: 10px;
+    overflow-x: hidden;
   }
   section .container {
     width: 90%;
