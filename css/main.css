@@ -214,6 +214,7 @@ section a {
 
 #faq ul {
   list-style-type: none;
+  padding-left: 0px;
 }
 
 #faq ul li {
@@ -291,6 +292,19 @@ footer p a {
   }
   header .container {
     padding-top: 100px;
+  }
+  #about img {
+    width: 100px;
+  }
+  #faq {
+    padding: 0px;
+  }
+  #faq ul li {
+    max-width: 100%;
+    display: block;
+    padding: 5px 0px;
+    margin: 0;
+    text-align: center;
   }
   section {
     padding: 10px;
