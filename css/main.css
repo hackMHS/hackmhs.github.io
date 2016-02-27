@@ -274,7 +274,7 @@ footer p a {
   border-bottom: 1px dotted white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   html, body {
     font-size: 1em;
     letter-spacing: -0.01rem;
