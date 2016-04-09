@@ -32,9 +32,9 @@ a {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: normal;
-  margin: 25px auto;
+  margin: 15px auto;
 }
 
 .heavy {
@@ -46,7 +46,7 @@ h3 {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 0;
+  display: none;
 }
 
 nav {
@@ -82,7 +82,8 @@ header {
   background: linear-gradient(45deg, rgba(10, 140, 200, 0.5), rgba(20, 30, 130, 0.5)), url('/img/cover.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  overflow:hidden;
+  overflow: hidden;
+  text-align: center;
 }
 
 header .container {
@@ -94,19 +95,33 @@ header .container {
 
 header h1 {
   font-family: 'Avenir Heavy', Helvetica, sans-serif;
-  font-size: 5.5em;
-  letter-spacing: -0.2rem;
+  font-size: 4em;
   margin: auto;
-  line-height: 1.2em;
+  line-height: 1.25em;
   padding: 0;
 }
 
 header img {
-  max-width: 300px;
+  max-height: 200px;
 }
 
 header p {
   margin: 0.5em;
+}
+
+div.button {
+  background: rgba(80, 190, 235, 0.9);
+  padding: 15px;
+  max-width: 200px;
+  margin: 25px auto;
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+}
+
+div.button:hover {
+  background: rgba(80, 190, 235, 0.6);
 }
 
 #mc_signup_form div {
@@ -121,7 +136,7 @@ header p {
   opacity: 0.5;
   border-radius: 3px;
   font-family: 'Avenir Light';
-  font-size: 1.25em;
+  font-size: 1em;
   letter-spacing: inherit;
 }
 
@@ -132,9 +147,9 @@ header p {
 .mc_signup_button {
   background: rgba(105, 203, 251, 0.2);
   border-radius: 3px;
-  padding: 0.5em;
+  padding: 0.3em;
   position: relative;
-  z-index: 10;
+  top: 1.5px;
 }
 .mc_signup_button .fa {
   color: white;
@@ -168,8 +183,7 @@ ul.social li a {
   color: inherit;
   opacity: 0.8;
   padding: 10px;
-  font-size: 1.25em;
-  z-index: 50;
+  font-size: 1.1em;
 }
 
 ul.social li a:hover {
@@ -295,6 +309,9 @@ footer p a {
   header h1 {
     font-size: 3em;
     letter-spacing: -0.08rem;
+  }
+  header img {
+    max-height: 125px;
   }
   nav {
     width: 100%;
