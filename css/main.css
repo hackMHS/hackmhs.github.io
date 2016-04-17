@@ -249,6 +249,32 @@ section a {
   font-family: 'Avenir Heavy';
 }
 
+#schedule {
+  background: rgba(5, 60, 160, 0.9);
+  color: white;
+}
+
+#schedule h3 {
+  text-align: center;
+}
+
+#schedule .sch-wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+#schedule .sch {
+  width: auto;
+  display: inline-block;
+  padding: 20px;
+  text-align: left;
+}
+
+#schedule table .time {
+  padding: 2px;
+  padding-right: 25px;
+}
+
 #sponsors {
   text-align: center;
 }
