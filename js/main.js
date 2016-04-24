@@ -9,5 +9,14 @@ $(window).load(function() {
           speed: 900,
         });
 	});
+  $('#classes a').on('click', function(event) {
+    console.log("hi")
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+          scrollTarget: link.hash,
+          speed: 900,
+        });
+  });
 });
 

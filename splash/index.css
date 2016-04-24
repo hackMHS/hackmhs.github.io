@@ -1,6 +1,11 @@
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url('/fonts/Proxima-Nova.otf') format('opentype');
+  font-family: 'Avenir Light';
+  src: url('/fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('/fonts/Avenir-Heavy.ttf') format('truetype');
 }
 
 @font-face {
@@ -15,9 +20,10 @@ html, body {
 }
 
 body {
-  font-family: 'Proxima Nova', Helvetica, sans-serif;
+  font-family: 'Avenir Light', Helvetica, sans-serif;
   font-size: 1.25em;
   color: #404040;
+  letter-spacing: -0.02em;
 }
 
 a {
@@ -32,7 +38,7 @@ h3 {
 }
 
 .heavy {
-  font-weight: bold;
+  font-family: 'Avenir Heavy';
   color: #41c4ff;
 }
 
@@ -104,7 +110,7 @@ div.button {
   max-width: 200px;
   margin: 25px auto;
   font-size: 1.25em;
-  font-weight: bold;
+  font-family: 'Avenir Heavy';
   border-radius: 5px;
 }
 
@@ -176,13 +182,18 @@ section a {
   margin: auto;
 }
 
-#faq {
-  background: linear-gradient(-45deg, rgba(82, 162, 234, 0.9), rgba(32, 123, 235, 0.9));
+#about {
+  background: linear-gradient(0deg, rgba(30, 110, 190, 0.9), rgba(0, 70, 180, 0.9));
   color: white;
   text-align: center;
 }
 
-#faq ul {
+#faq {
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+#faq ul, #classes ul {
   list-style-type: none;
   padding-left: 0px;
 }
@@ -195,42 +206,31 @@ section a {
   text-align: left;
 }
 
-#faq h3 {
-  font-weight: bold;
+#faq h3, #classes h3 {
+  font-family: 'Avenir Heavy';
 }
 
-#schedule {
-  background: rgba(5, 60, 160, 0.9);
-  color: white;
-}
-
-#schedule h3 {
+#classes h2 {
+  padding-top: 25px;
+  font-family: 'Avenir Heavy';
+  color: #41c4ff;
   text-align: center;
 }
 
-#schedule .sch-wrapper {
+#classes li {
+  max-width: 500px;
   margin: auto;
-  text-align: center;
+  padding: 10px;
 }
 
-#schedule .sch {
-  width: auto;
-  display: inline-block;
-  padding: 15px;
-  text-align: left;
-}
-
-#schedule table .time {
-  padding: 2px;
-  padding-right: 25px;
+#classes li p {
+  margin: 5px;
 }
 
 footer {
   padding: 20px;
   text-align: center;
-  background: linear-gradient(45deg, rgba(10, 80, 160, 0.5), rgba(10, 80, 160, 0.5)), url('/img/cover.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
+  background: #0a2077;
   color: white;
   font-size: 0.75em;
 }
