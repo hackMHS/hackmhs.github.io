@@ -1,0 +1,374 @@
+@font-face {
+  font-family: 'Avenir Light';
+  src: url('/fonts/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Heavy';
+  src: url('/fonts/Avenir-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('/fonts/Avenir-Book.ttf') format('truetype');
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Avenir Light', Helvetica, sans-serif;
+  font-size: 1.25em;
+  color: #404040;
+  letter-spacing: -0.02rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: 15px auto;
+}
+
+.heavy {
+  font-family: 'Avenir Heavy';
+  color: #41c4ff;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+
+nav {
+  width: 100%;
+  padding: 5px;
+  max-height: 50px;
+  color: white;
+  background: rgba(25, 60, 140, 0.95);
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding-left: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 5px 15px;
+  opacity: 0.75;
+}
+
+nav ul li:hover {
+  opacity: 1;
+}
+
+header {
+  height: 100%;
+  background: linear-gradient(45deg, rgba(10, 140, 200, 0.5), rgba(20, 30, 130, 0.5)), url('/img/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-align: center;
+}
+
+header .container {
+  width: 80%;
+  margin: auto;
+  padding-top: 12%;
+  color: white;
+}
+
+header h1 {
+  font-family: 'Avenir Heavy', Helvetica, sans-serif;
+  font-size: 4em;
+  margin: auto;
+  line-height: 1.25em;
+  padding: 0;
+}
+
+header img {
+  max-height: 200px;
+}
+
+header p {
+  margin: 0.5em;
+}
+
+div.button {
+  background: rgba(80, 190, 235, 0.9);
+  padding: 15px;
+  max-width: 200px;
+  margin: 25px auto;
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+}
+
+div.button:hover {
+  background: rgba(80, 190, 235, 0.6);
+}
+
+#mc_signup_form div {
+  display: inline-block;
+}
+
+#mc_signup_form input {
+  padding: 10px;
+  border: none;
+  background: #fafafa;
+  outline: none;
+  opacity: 0.5;
+  border-radius: 3px;
+  font-family: 'Avenir Light';
+  font-size: 1em;
+  letter-spacing: inherit;
+}
+
+#mc_signup_form input:focus {
+  opacity: 0.6;
+}
+
+.mc_signup_button {
+  background: rgba(105, 203, 251, 0.2);
+  border-radius: 3px;
+  padding: 0.3em;
+  position: relative;
+  top: 1.5px;
+}
+.mc_signup_button .fa {
+  color: white;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 5px;
+}
+.mc_signup_button:hover {
+  cursor: pointer;
+  background: rgba(105, 203, 251, 0.4);
+}
+
+*, *:hover {
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+ul.social {
+  padding-left: 0;
+  margin: auto;
+  padding: 10px;
+  list-style-type: none;
+}
+
+ul.social li {
+  display: inline-block;
+}
+
+ul.social li a {
+  color: inherit;
+  opacity: 0.8;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+ul.social li a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+section {
+  background: white;
+  padding: 50px;
+}
+
+section .container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+section h1 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: normal;
+}
+
+section a {
+  color: #41c4ff;
+  border-bottom: 1px dotted #21a2ef;
+}
+
+#about {
+  text-align: center;
+}
+
+#about img {
+  width: 175px;
+}
+
+#about p {
+  max-width: 500px;
+  margin: auto;
+}
+
+#faq {
+  background: linear-gradient(-45deg, rgba(10, 140, 200, 0.9), rgba(20, 30, 130, 0.9));
+  color: white;
+  text-align: center;
+}
+
+#faq ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#faq ul li {
+  width: 500px;
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 20px;
+  text-align: left;
+}
+
+#faq h3 {
+  font-family: 'Avenir Heavy';
+}
+
+#schedule {
+  background: rgba(5, 60, 160, 0.9);
+  color: white;
+}
+
+#schedule h3 {
+  text-align: center;
+}
+
+#schedule .sch-wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+#schedule .sch {
+  width: auto;
+  display: inline-block;
+  padding: 15px;
+  text-align: left;
+}
+
+#schedule table .time {
+  padding: 2px;
+  padding-right: 25px;
+}
+
+#sponsors {
+  text-align: center;
+}
+
+#sponsors a {
+  border-bottom: none;
+}
+
+#sponsors ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin: auto;
+}
+#sponsors li {
+  display: inline-block;
+  padding: 1em;
+}
+
+#sponsors img {
+  opacity: 0.8;
+}
+
+#sponsors img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#sponsors ul.partners img {
+  max-width: 150px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(45deg, rgba(10, 80, 160, 0.5), rgba(10, 80, 160, 0.5)), url('/img/cover.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  font-size: 0.75em;
+}
+
+footer ul.social {
+  padding: 0px;
+}
+footer ul.social li {
+  padding-top: 0px;
+}
+footer p a {
+  border-bottom: 1px dotted white;
+}
+
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: 1em;
+    letter-spacing: -0.01rem;
+  }
+  header {
+    height: auto;
+  }
+  header input, .fa {
+    font-size: 1em;
+  }
+  header h1 {
+    font-size: 3em;
+    letter-spacing: -0.08rem;
+  }
+  header img {
+    max-height: 125px;
+  }
+  nav {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  header .container {
+    padding-top: 100px;
+  }
+  #about img {
+    width: 100px;
+  }
+  #faq {
+    padding: 0px;
+  }
+  #faq ul li {
+    max-width: 100%;
+    display: block;
+    padding: 5px 0px;
+    margin: 0;
+    text-align: center;
+  }
+  section {
+    padding: 10px;
+    overflow: hidden;
+  }
+  section .container {
+    width: 90%;
+  }
+}
