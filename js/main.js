@@ -1,6 +1,6 @@
 $(window).load(function() {
 	particlesJS.load('particles', '/js/particles.json', function() {});
-	$('nav a').on('click', function(event) {
+	$('nav a.scroll').on('click', function(event) {
 		console.log("hi")
         event.preventDefault();
         var link = this;
