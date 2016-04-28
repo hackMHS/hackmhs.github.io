@@ -193,7 +193,7 @@ ul.social li a:hover {
 
 section {
   background: white;
-  padding: 50px;
+  padding: 25px;
 }
 
 section .container {
@@ -238,10 +238,10 @@ section a {
 }
 
 #faq ul li {
-  width: 400px;
+  max-width: 360px;
   display: inline-block;
-  padding: 10px;
-  margin: 0px 20px;
+  padding: 5px;
+  margin: 0px 15px;
   text-align: left;
 }
 

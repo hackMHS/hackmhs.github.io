@@ -34,7 +34,7 @@ a {
 h3 {
   font-size: 1.25em;
   font-weight: normal;
-  margin: 15px auto;
+  margin: 10px auto;
 }
 
 .heavy {
@@ -74,6 +74,7 @@ header {
   height: 100%;
   overflow: hidden;
   text-align: center;
+  font-size: 0.9em;
 }
 
 header .container {
@@ -85,7 +86,7 @@ header .container {
 
 header h1 {
   font-family: 'Bebas', Helvetica, sans-serif;
-  font-size: 4em;
+  font-size: 3em;
   margin: auto;
   line-height: 1.25em;
   padding: 0;
@@ -199,7 +200,7 @@ section a {
 }
 
 #faq ul li {
-  width: 500px;
+  width: 400px;
   display: inline-block;
   padding: 10px;
   margin: 0px 20px;
