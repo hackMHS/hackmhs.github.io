@@ -124,6 +124,10 @@ div.button:hover {
   background: rgba(80, 190, 235, 0.6);
 }
 
+div.button.closed {
+  background: rgba(80, 80, 80, 0.6);
+}
+
 #mc_signup_form div {
   display: inline-block;
 }
