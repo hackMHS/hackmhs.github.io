@@ -1,0 +1,214 @@
+<html>
+<head>
+	<title>Live | hackMHS II</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="live.css"/>
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+</head>
+
+<body ng-app="app">
+
+	<header>
+
+		<div class="content">
+			<div class="logo"><a href="//hackmhs.com"><img src="img/logo-white.png"></a></div>
+		</div>
+	
+	</header>
+
+	<div class="main" ng-controller="MainController">
+
+		<div class="col-md-12">
+
+			<div class="col-md-6">
+				<div class="section" id="mentorRequest">
+				<h2 class="title">request a <span class="heavy">mentor</span></h2>
+					<p>Fill out this form, and we'll send a mentor over to help!</p>
+					<input class="name" placeholder="your name"></input>
+					<input class="teamName" placeholder="team or project name"></input>
+					<input class="tableNumber" placeholder="table number"></input>
+					<input class="details" placeholder="what do you need help with? (web, ios, google api, etc.)"></input>
+					<div class="button" id="sendRequest">send request</div>
+
+				</div>
+				<div class="section" id="resources">
+					<h2 class="title">links &amp; <span class="heavy">resources</span></h2>
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+
+				<div class="section" id="prizes">
+					<h2 class="title"><span class="heavy">prize</span> categories</h2>
+					<ul>
+						<li><b>Best Text-Based Hack</b> For a game based on text prompts.</li>
+						<li><b>Best Website on a .tech Domain</b> For a hack built for the web.</li>
+						<li><b>Best Mobile App</b> For a hack built for mobile - iOS, Android, etc.</li>
+						<li><b>Best Education Hack</b> For a hack targeted toward improving education or helping students.</li>
+						<li><b>Best Hardware Hack</b> For a hack aiming for social change.</li>
+						<li><b>Best Overall</b> For the best overall hack.</li>
+					</ul>
+					
+				</div>
+
+			</div>
+
+			<div class="col-md-6">
+				<div class="section" id="chat">
+				<h2 class="title">hacker <span class="heavy">chat</span></h2>
+				<p>You are <b>{{ username }}</b> <span class="changeUsername">change my username</span></p></span>
+				<div class="container" id="chatWindow">
+					<ul id="chatList">
+						<li ng-repeat="msg in chat">
+							<p class="user">{{ msg.user }}</p>
+							<p class="message">{{ msg.message }}</p>
+						</li>
+					</ul>
+				</div>
+				<input id="newMsg" placeholder="type and press enter"></input>
+			</div>
+			
+		</div>
+
+		<div class="col-md-12">
+
+		<div class="section" id="schedule">
+			<h2 class="title">event <span class="heavy">schedule</span></h2>
+			<div class="sch-wrapper">
+		      <div class="sch">
+		      <table>
+		        <tr>
+		          <h3><span class="heavy">saturday</span> may 21</h3>
+		        </tr>
+		        <tr>
+		          <td class="time">10 am</span></td>
+		          <td class="event">check in</td>
+		        </tr>
+		        <tr>
+		          <td class="time">11 am</td>
+		          <td class="event">opening ceremony</td>
+		        </tr>
+		        <tr>
+		          <td class="time">12 pm</td>
+		          <td class="event">hacking begins</td>
+		        </tr>
+		        <tr>
+		          <td class="time">12 pm</td>
+		          <td class="event">team formation</td>
+		        </tr>
+		        <tr>
+		          <td class="time">12:30 pm</td>
+		          <td class="event"><span class="heavy">lunch</span></td>
+		        </tr>
+		        <tr>
+		           <td class="time">1-2 pm</td>
+		          <td class="event">github</td>
+		        </tr>
+		        <tr>
+		          <td class="time">2-3 pm</td>
+		          <td class="event">web design</td>
+		        </tr>
+		        <tr>
+		          <td class="time">2-3 pm</td>
+		          <td class="event">intro to java</td>
+		        </tr>
+		        <tr>
+		          <td class="time">3-4 pm</td>
+		          <td class="event">javascript and APIs</td>
+		        </tr>
+		        <tr>
+		          <td class="time">3-4 pm</td>
+		          <td class="event">software design</td>
+		        </tr>
+		        <tr>
+		          <td class="time">4-6 pm</td>
+		          <td class="event">iOS workshop</td>
+		        </tr>
+		        <tr>
+		          <td class="time">4-6 pm</td>
+		          <td class="event">android workshop</td>
+		        </tr>
+		        <tr>
+		          <td class="time">6 pm</td>
+		          <td class="event"><span class="heavy">dinner</span></td>
+		        </tr>
+		        <tr>
+		          <td class="time">8-9 pm</td>
+		          <td class="event">graphic design</td>
+		        </tr>
+		        <tr>
+		          <td class="time">9 pm</td>
+		          <td class="event">cupstacking</td>
+		        </tr>
+		        <tr>
+		          <td class="time">9:30 pm</td>
+		          <td class="event">melee & hearthstone</td>
+		        </tr>
+		        <tr>
+		          <td class="time">10 pm</td>
+		          <td class="event">women hackers meetup</td>
+		        </tr>
+		        <tr>
+		          <td class="time">10 pm</td>
+		          <td class="event">sleeping area open</td>
+		        </tr>
+		        <tr>
+		          <td class="time">12 am</td>
+		          <td class="event"><span class="heavy">midnight snack</span></td>
+		        </tr>
+		     </table>
+		     </div>
+
+		     <div class="sch">
+		     <table>
+		        <tr>
+		          <h3><span class="heavy">sunday</span> may 22</h3>
+		        </tr>
+		        <tr>
+		          <td class="time">7 am</td>
+		          <td class="event"><span class="heavy">breakfast</span></td>
+		        </tr>
+		        <tr>
+		          <td class="time">9-10 am</td>
+		          <td class="event">insider's guide to programming interviews</td>
+		        </tr>
+		        <tr>
+		          <td class="time">10-11 am</td>
+		          <td class="event">entrepreneurship</td>
+		        </tr>
+		        <tr>
+		          <td class="time">11 am</td>
+		          <td class="event"><span class="heavy">lunch</span></td>
+		        </tr>
+		        <tr>
+		          <td class="time">12 pm</td>
+		          <td class="event">hacking ends</td>
+		        </tr>
+		        <tr>
+		          <td class="time">12 pm</td>
+		          <td class="event">expo &amp; judging</td>
+		        </tr>
+		        <tr>
+		          <td class="time">1:30 pm</td>
+		          <td class="event">closing ceremony</td>
+		        </tr>
+		     </table>
+		     </div>
+		    </div>
+		</div>
+
+	</div>
+
+	<!-- Modules -->
+    <script src="app.js"></script>
+    <!-- Controllers-->
+    <script src="mc.js"></script>
+
+</body>
+</html>
