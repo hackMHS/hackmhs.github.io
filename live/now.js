@@ -1,6 +1,6 @@
 app.controller('NowController', function($scope) {
 
-	$scope.tweet = "Welcome to hackMHS II!";
+	$scope.tweet = "Github workshop happening right now in Room 108!";
 
 	// ??
 	
