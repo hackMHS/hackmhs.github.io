@@ -21,18 +21,63 @@ body {
 }
 
 a:hover {
-  text-decoration: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
   color: inherit;
 }
 
 .main {
-  padding: 25px;
+  padding: 40px 15px;
   width: 90%;
   margin: auto;
 }
 
 .main div {
   margin: auto;
+}
+
+.overlay {
+  width: 100%; height: 100%;
+  position: fixed;
+  opacity: 0.75;
+  background-color: black;
+  z-index: 1;
+  display: none;
+}
+
+#mentor-req-form {
+  position: absolute;
+  border-radius: 4px;
+  padding: 60px;
+  background: white;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+
+#mentor-req:hover, #mentor-req-form p:hover {
+  cursor: pointer;
+}
+
+#mentor-req-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+
+h2 {
+  font-size: 3em;
 }
 
 header {
@@ -95,6 +140,34 @@ nav ul li:hover {
   color: #41c4ff;
 }
 
+*, *:hover {
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+ul.social {
+  padding-left: 0;
+  margin: auto;
+  padding: 10px;
+  list-style-type: none;
+}
+
+ul.social li {
+  display: inline-block;
+}
+
+ul.social li a {
+  color: inherit;
+  opacity: 0.8;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+ul.social li a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 
 /* NOW */
 
@@ -102,16 +175,32 @@ nav ul li:hover {
   background: #273775;
   color: white;
   padding: 10px;
+  text-align: center;
 }
 
-#now h2 {
+#now h3 {
+   font-family: 'Avenir Heavy';
    letter-spacing: -0.04rem;
+}
+
+/* SCHEDULE */
+
+.sch {
+  padding: 5px 25px;
+}
+
+.sch td {
+  padding: 5px 10px;
+}
+
+.sch .location {
+  color: #808080;
 }
 
 /* CHAT */
 
 #chat {
-  height: 300px;
+  height: 500px;
 }
 
 #chat ul#chatList {
@@ -155,12 +244,27 @@ nav ul li:hover {
 }
 
 #chat #chatWindow {
-
   overflow-y: hidden;
 }
 
+/* MENTORS */
+
+.button {
+  padding: 10px;
+  color: white;
+  margin: 20px auto;
+  background: #3ebbf3;
+  border-radius: 5px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
 .mentor-bios-title {
-    text-align: center;
+    text-align: center !important;
 }
 
 .mentor-list-item {

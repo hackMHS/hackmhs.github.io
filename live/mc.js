@@ -49,30 +49,23 @@ app.controller('MainController', function($scope, $firebaseArray) {
 
 	$scope.sendRequest = function() {
 		var r = new Object();
-		r.name = $("#mentorRequest .name").val();
-		r.teamName = $("#mentorRequest .teamName").val();
-		r.tableNumber = $("#mentorRequest .tableNumber").val();
-		r.details = $("#mentorRequest .details").val();
+		r.name = $("#mentor-req-form .name").val();
+		r.teamName = $("#mentor-req-form .teamName").val();
+		r.tableNumber = $("#mentor-req-form .tableNumber").val();
+		r.details = $("#mentor-req-form .details").val();
 		r.timestamp = $scope.getCurrentTime();
 
 		$scope.requests.$add(r);
-		$("#mentorRequest .name").val("");
-		$("#mentorRequest .teamName").val("");
-		$("#mentorRequest .tableNumber").val("");
-		$("#mentorRequest .details").val("");
+		$("#mentor-req-form .name").val("");
+		$("#mentor-req-form .teamName").val("");
+		$("#mentor-req-form .tableNumber").val("");
+		$("#mentor-req-form .details").val("");
 	}
 
 	$scope.addAlert = function(alert) {
 		$scope.$apply(function() {
 			$scope.alertMessage = alert;
 		})
-	}
-
-	$scope.masterSetUsername = function(un) {
-		$scope.$apply(function() {
-			$scope.username = un;
-		});
-		console.log($scope.username);
 	}
 
 	$scope.getCurrentTime = function() {
@@ -89,7 +82,7 @@ app.controller('MainController', function($scope, $firebaseArray) {
 			return $scope.currentTime;
 		}
 		else {
-			$scope.currentTime = hour + ":" + min;
+			$scope.currentTime = hour + ":" + min + " AM";
 			return $scope.currentTime;
 		}
 	}

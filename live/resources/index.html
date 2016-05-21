@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Live | hackMHS II</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../live.css"/>
+    <link rel="shortcut icon" href="../img/favicon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+</head>
+
+<body ng-app="app">
+
+    <div class="overlay"></div>
+
+    <div id="mentor-req-form" class="alert">
+        <h2 class="title">request a <span class="heavy">mentor</span></h2>
+        <p>Fill out this form, and we'll send a mentor over to help!</p>
+        <input class="name" placeholder="your name"></input><br>
+        <input class="teamName" placeholder="team or project name"></input><br>
+        <input class="tableNumber" placeholder="table number"></input><br>
+        <input class="details" placeholder="what do you need help with?"></input>
+        <div class="button" id="sendRequest">send request</div>
+        <p style="text-align:center;color:#808080" class="close-button">never mind</p>
+    </div>
+
+    <header>
+
+        <div class="content">
+            <div class="logo"><a href="//hackmhs.com/live"><img src="../img/logo-white.png"></a></div>
+        </div>
+    
+    </header>
+
+   <nav>
+        <ul>
+          <li><a href="../"><i class="fa fa-home"></i> dashboard</a></li>
+          <li><a href="../mentors/"><i class="fa fa-heart"></i> mentors</a></li>
+          <!--<li><a href="../resources/"><i class="fa fa-info-circle"></i> resources</a></li>-->
+          <!--<li><a href="../prizes"><i class="fa fa-trophy"></i> prizes</a></li>-->
+          <li><a href="//hackmhs.hackerearth.com/" target="_blank"><i class="fa fa-external-link"></i> submit project</a></li>
+          <li id="mentor-req"><i class="fa fa-question-circle"></i> request mentor</a></li>
+        </ul>
+    </nav>
+
+    <div id="now" ng-controller="NowController">
+        <div class="container">
+            <h3>{{ tweet }}</h3>
+            <p style="color:#cdcdcd">&mdash; hackMHS</p>
+        </div>
+    </div>
+
+    <div class="main" ng-controller="MainController">
+        <div class="container">
+            <div class="col-md-12">
+                <center><h2>links and <span class="heavy">resources</span></h2></center>
+            </div>
+            <div class="col-md-12">
+                <center><h2><span class="heavy">workshop</span> descriptions</h2></center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modules -->
+    <script src="../app.js"></script>
+    <!-- Controllers-->
+    <script src="../mc.js"></script>
+    <script src="../now.js"></script>
+
+</body>
+</html>

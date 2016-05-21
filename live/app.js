@@ -1,10 +1,16 @@
 var app = angular.module("app", ["firebase"]);
 
-$(window).load(function() {
-	angular.element($(".main")).scope().genRandUsername();
-	angular.element($("#now")).scope().getTweet();
-	var chat = document.getElementById("chatList")
-    setTimeout(function() {chat.scrollTop = chat.scrollHeight;}, 2000);
+$("#mentor-req").click(function() {
+	$(".overlay").fadeIn(500);
+	$("#mentor-req-form").fadeIn(500);
+	console.log("hi")
+});
+
+$("#sendRequest").click(function() {
+	angular.element($(".main")).scope().sendRequest();
+	alert("Your request has been submitted! A mentor should be on his/her way to your table shortly.")
+	$(".overlay").fadeOut(500);
+	$(".alert").fadeOut(500);
 });
 
 $("#newMsg").keypress(function (event) {
@@ -18,16 +24,14 @@ $("#newMsg").keypress(function (event) {
  }
 });   
 
-$("#sendRequest").click(function() {
-	angular.element($(".main")).scope().sendRequest();
-	angular.element($(".main")).scope().addAlert("Your request has been successfully submitted!");
-	$(".overlay").fadeIn(800);
-	$(".alert").fadeIn(800);
-});
+$(".overlay").click(function() {
+	$(".alert").fadeOut(500);
+	$(".overlay").fadeOut(500);
+})
 
 $(".alert .close-button").click(function() {
-	$(".alert").fadeOut(800);
-	$(".overlay").fadeOut(800);
+	$(".alert").fadeOut(500);
+	$(".overlay").fadeOut(500);
 })
 
 $(".changeUsername").click(function() {

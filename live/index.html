@@ -14,28 +14,42 @@
 
 <body ng-app="app">
 
+	<div class="overlay"></div>
+
+    <div id="mentor-req-form" class="alert">
+        <h2 class="title">request a <span class="heavy">mentor</span></h2>
+        <p>Fill out this form, and we'll send a mentor over to help!</p>
+        <input class="name" placeholder="your name"></input><br>
+        <input class="teamName" placeholder="team or project name"></input><br>
+        <input class="tableNumber" placeholder="table number"></input><br>
+        <input class="details" placeholder="what do you need help with?"></input>
+        <div class="button" id="sendRequest">send request</div>
+        <p style="text-align:center;color:#808080" class="close-button">never mind</p>
+    </div>
+
 	<header>
 
 		<div class="content">
-			<div class="logo"><a href="//hackmhs.com"><img src="img/logo-white.png"></a></div>
+			<div class="logo"><a href="//hackmhs.com/live"><img src="img/logo-white.png"></a></div>
 		</div>
 	
 	</header>
 
-	<nav>
-    <ul>
-      <li><a href="http://hackmhs.com/live/">dashboard</a></li>
-      <li><a href="http://hackmhs.com/live/info/">info</a></li>
-      <li><a href="http://hackmhs.com/live/mentors/">mentors</a></li>
-      <li><a href="http://hackmhs.com/live/resources/">resources</a></li>
-    </ul>
-  </nav>
+	 <nav>
+        <ul>
+          <li><a href="../live"><i class="fa fa-home"></i> dashboard</a></li>
+          <li><a href="mentors/"><i class="fa fa-heart"></i> mentors</a></li>
+          <!--<li><a href="resources/"><i class="fa fa-info-circle"></i> resources</a></li>-->
+          <!--<li><a href="prizes"><i class="fa fa-trophy"></i> prizes</a></li>-->
+          <li><a href="//hackmhs.hackerearth.com/" target="_blank"><i class="fa fa-external-link"></i> submit project</a></li>
+          <li id="mentor-req"><i class="fa fa-question-circle"></i> request mentor</a></li>
+        </ul>
+    </nav>
 
   	<div id="now" ng-controller="NowController">
 		<div class="container">
-			<h3>What's happening now</h3>
-			<p>{{ tweet }}</p>
-			<p>&emdash; @hackMHS</p>
+			<h3>{{ tweet }}</h3>
+			<p style="color:#cdcdcd">&mdash; hackMHS</p>
 		</div>
 	</div>
 
@@ -43,13 +57,166 @@
 
 		<div class="col-md-12">
 
-			<div class="col-md-6">
-				<a class="twitter-timeline" href="https://twitter.com/hashtag/hackMHS" data-widget-id="733867141959712768">#hackMHS Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div>
+		<div class="col-md-6">
 
-			<div class="col-md-6">
-				<div class="section" id="chat">
+			<div class="section" id="schedule">
+				<h2 class="title">event <span class="heavy">schedule</span></h2>
+				<div class="sch-wrapper">
+			      <div class="sch">
+			      <table>
+			        <tr>
+			          <h3><span class="heavy">saturday</span> may 21</h3>
+			        </tr>
+			        <tr>
+			          <td class="time">10 am</span></td>
+			          <td class="event">check in</td>
+			          <td class="location">lobby</td>
+			        </tr>
+			        <tr>
+			          <td class="time">11 am</td>
+			          <td class="event">opening ceremony</td>
+			          <td class="location">auditorium</td>
+			        </tr>
+			        <tr>
+			          <td class="time">12 pm</td>
+			          <td class="event">hacking begins</td>
+			          <td class="location">cafeteria</td>
+			        </tr>
+			        <tr>
+			          <td class="time">12 pm</td>
+			          <td class="event">team formation</td>
+			          <td class="location">cafeteria</td>
+			        </tr>
+			        <tr>
+			          <td class="time">12:30 pm</td>
+			          <td class="event"><span class="heavy">lunch</span></td>
+			          <td class="location">auditorium</td>
+			        </tr>
+			        <tr>
+			           <td class="time">1-2 pm</td>
+			          <td class="event">github</td>
+			          <td class="location">108</td>
+			        </tr>
+			        <tr>
+			          <td class="time">2-3 pm</td>
+			          <td class="event">web design</td>
+			          <td class="location">108</td>
+			        </tr>
+			        <tr>
+			          <td class="time">2-3 pm</td>
+			          <td class="event">intro to java</td>
+			          <td class="location">107</td>
+			        </tr>
+			        <tr>
+			          <td class="time">3-4 pm</td>
+			          <td class="event">javascript and APIs</td>
+			          <td class="location">112</td>
+			        </tr>
+			        <tr>
+			          <td class="time">3-4 pm</td>
+			          <td class="event">software design</td>
+			          <td class="location">109</td>
+			        </tr>
+			        <tr>
+			          <td class="time">4-6 pm</td>
+			          <td class="event">iOS workshop</td>
+			          <td class="location">108</td>
+			        </tr>
+			        <tr>
+			          <td class="time">4-6 pm</td>
+			          <td class="event">android workshop</td>
+			          <td class="location">107</td>
+			        </tr>
+			        <tr>
+			          <td class="time">6 pm</td>
+			          <td class="event"><span class="heavy">dinner</span></td>
+			          <td class="location">cafeteria</td>
+			        </tr>
+			        <tr>
+			          <td class="time">8-9 pm</td>
+			          <td class="event">graphic design</td>
+			          <td class="location">108</td>
+			        </tr>
+			        <tr>
+			          <td class="time">9 pm</td>
+			          <td class="event">cupstacking</td>
+			          <td class="location">cafeteria</td>
+			        </tr>
+			        <tr>
+			          <td class="time">9:30 pm</td>
+			          <td class="event">melee & hearthstone</td>
+			          <td class="location">107 &amp; 108</td>
+			        </tr>
+			        <tr>
+			          <td class="time">10 pm</td>
+			          <td class="event">women hackers meetup</td>
+			          <td class="location">110</td>
+			        </tr>
+			        <tr>
+			          <td class="time">10 pm</td>
+			          <td class="event">sleeping areas open</td>
+			          <td class="location">102 &amp; 103 (F), 111 &amp; 113 (M)</td>
+			        </tr>
+			        <tr>
+			          <td class="time">12 am</td>
+			          <td class="event"><span class="heavy">midnight snack</span></td>
+			          <td class="location">cafeteria</td>
+			        </tr>
+			     </table>
+			     </div>
+
+			     <div class="sch">
+			     <table>
+			        <tr>
+			          <h3><span class="heavy">sunday</span> may 22</h3>
+			        </tr>
+			        <tr>
+			          <td class="time">7 am</td>
+			          <td class="event"><span class="heavy">breakfast</span></td>
+			          <td class="location">cafeteria</td>
+			        </tr>
+			        <tr>
+			          <td class="time">9-10 am</td>
+			          <td class="event">insider's guide to<br> programming interviews</td>
+			          <td class="location">112</td>
+			        </tr>
+			        <tr>
+			          <td class="time">10-11 am</td>
+			          <td class="event">entrepreneurship</td>
+			          <td class="location">108</td>
+			        </tr>
+			        <tr>
+			          <td class="time">11 am</td>
+			          <td class="event"><span class="heavy">lunch</span></td>
+			          <td class="location">cafeteria</td>
+			        </tr>
+			        <tr>
+			          <td class="time">11 am</td>
+			          <td class="event">hacking ends</td>
+			          <td class="location">cafeteria</td>
+			        </tr>
+			        <tr>
+			          <td class="time">11:30 am</td>
+			          <td class="event">expo &amp; judging</td>
+			          <td class="location">cafeteria</td>
+			        </tr>
+			        <tr>
+			          <td class="time">1:30 pm</td>
+			          <td class="event">closing ceremony</td>
+			          <td class="location">auditorium</td>
+			        </tr>
+			     </table>
+			     </div> <!-- sch -->
+			    </div> <!-- sch wrapper -->
+			</div>	<!-- schedule -->
+		</div>
+
+		<div class="col-md-6">
+
+			<a class="twitter-timeline" href="https://twitter.com/search?q=%40hackMHS" data-widget-id="733900871881359360">Tweets about @hackMHS</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+			<div class="section" id="chat">
 				<h2 class="title">hacker <span class="heavy">chat</span></h2>
 				<p>You are <b>{{ username }}</b> <span class="changeUsername">change my username</span></p></span>
 				<div class="container" id="chatWindow">
@@ -62,14 +229,24 @@
 				</div>
 				<input id="newMsg" placeholder="type and press enter"></input>
 			</div>
-			
+
 		</div>
+		</div>
+	</div>
 
 	<!-- Modules -->
     <script src="app.js"></script>
     <!-- Controllers-->
     <script src="mc.js"></script>
     <script src="now.js"></script>
+
+    <script type="text/javascript">
+    	$(window).load(function() {
+			angular.element($(".main")).scope().genRandUsername();
+			var chat = document.getElementById("chatList")
+		    setTimeout(function() {chat.scrollTop = chat.scrollHeight;}, 2000);
+		});
+    </script>
 
 </body>
 </html>
