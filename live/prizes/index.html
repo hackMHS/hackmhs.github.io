@@ -112,18 +112,18 @@
     </div>
 
     <div class="main container" ng-controller="MainController">
-        <div class="row mentors-list">
+        <div class="row prize-list">
             <center><h2><span class="heavy">prize</span> categories</h2></center>
             <script>
                 for (var i in prizes) {
                     var prize = prizes[i];
-                    $(".mentors-list").append(
-                        $("<div class='col-md-6 mentor-list-item'>" +
+                    $(".prize-list").append(
+                        $("<div style=\"text-align:center\" class='col-md-4 prize-list-item'>" +
                                 "<div class='info'>" +
-                                    "<h3>" + prize.name + "</h3>" +
-                                    "<h4>" + prize.sponsor + "</h4>" +
+                                    "<h2>" + prize.name + "</h2>" +
+                                    "<h3>" + prize.sponsor + "</h3>" +
                                     "<p>" + prize.description + "</p>" +
-                                    "<p>" + prize.prize + "</p>" +
+                                    "<h4>" + prize.prize + "</h4>" +
                                 "</div>" +
                           "</div>"
                          )

@@ -267,7 +267,7 @@ ul.social li a:hover {
     text-align: center !important;
 }
 
-.mentor-list-item {
+.mentor-list-item, .prize-list-item {
     padding: 20px;
     text-align: center;
 }
@@ -280,16 +280,16 @@ ul.social li a:hover {
     object-fit: cover;
 }
 
-.mentor-list-item .info {
+.mentor-list-item .info, .prize-list-item .info {
     padding: 0px 20px;
 }
 
-.mentor-list-item h3 {
+.mentor-list-item h3, .prize-list-item h3 {
     font-family: "Avenir-Heavy";
     margin-top: 20px;
 }
 
-.mentor-list-item strong {
+.mentor-list-item strong, .prize-list-item strong {
     font-family: "Avenir-Heavy";
 }
 
@@ -299,7 +299,7 @@ ul.social li a:hover {
         margin-left: 20px;
     }
     
-    .mentor-list-item {
+    .mentor-list-item, .prize-list-item {
         text-align: left;
     }
     
@@ -310,7 +310,7 @@ ul.social li a:hover {
         height: 150px;
     }
     
-    .mentor-list-item h3 {
+    .mentor-list-item h3, .prize-list-item h3 {
         margin-top: 4px;
     }
     
@@ -318,6 +318,10 @@ ul.social li a:hover {
         margin-left: 150px;
         padding: 0px 20px;
         min-height: 150px;
+    }
+
+    .prize-list-item .info {
+        padding: 0px 20px;
     }
 }
 
