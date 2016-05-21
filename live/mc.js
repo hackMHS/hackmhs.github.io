@@ -12,6 +12,7 @@ app.controller('MainController', function($scope, $firebaseArray) {
 		var m = new Object();
 		m.user = $scope.username;
 		m.message = msg;
+		m.time = $scope.getCurrentTime();
 		$scope.chat.$add(m);
 	}
 
@@ -82,7 +83,7 @@ app.controller('MainController', function($scope, $firebaseArray) {
 			return $scope.currentTime;
 		}
 		else {
-			$scope.currentTime = hour + ":" + min + " AM";
+			$scope.currentTime = hour + ":" + min;
 			return $scope.currentTime;
 		}
 	}
