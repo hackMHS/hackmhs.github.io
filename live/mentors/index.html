@@ -141,12 +141,34 @@
     
     <nav>
         <ul>
-          <li><a href="http://hackmhs.com/live/">dashboard</a></li>
-          <li><a href="http://hackmhs.com/live/info/">info</a></li>
-          <li><a href="http://hackmhs.com/live/mentors/">mentors</a></li>
-          <li><a href="http://hackmhs.com/live/resources/">resources</a></li>
+          <li><a href="../">dashboard</a></li>
+          <li><a href="../info">info</a></li>
+          <li><a href="../mentors/">mentors</a></li>
+          <li><a href="../resources/">resources</a></li>
+          <li><a href="//hackmhs.hackerearth.com/">submit project</a></li>
+          <li id="mentor-req">request mentor</a></li>
         </ul>
     </nav>
+
+    <div class="overlay"></div>
+
+    <div id="mentor-req-form">
+        <h2 class="title">request a <span class="heavy">mentor</span></h2>
+        <p>Fill out this form, and we'll send a mentor over to help!</p>
+        <input class="name" placeholder="your name"></input><br>
+        <input class="teamName" placeholder="team or project name"></input><br>
+        <input class="tableNumber" placeholder="table number"></input><br>
+        <input class="details" placeholder="what do you need help with? (web, ios, google api, etc.)"></input>
+        <div class="button" id="sendRequest">send request</div>
+    </div>
+
+    <div id="now" ng-controller="NowController">
+        <div class="container">
+            <h3>Request a mentor</h3>
+            <p>{{ tweet }}</p>
+            <p>&emdash; @hackMHS</p>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row mentors-list">

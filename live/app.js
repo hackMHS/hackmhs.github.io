@@ -7,6 +7,11 @@ $(window).load(function() {
     setTimeout(function() {chat.scrollTop = chat.scrollHeight;}, 2000);
 });
 
+$("#mentor-req").click(function() {
+	$(".overlay").fadeIn(500);
+	$("#mentor-req-form").fadeIn(500);
+});
+
 $("#newMsg").keypress(function (event) {
  var key = event.which;
  if (key == 13) {

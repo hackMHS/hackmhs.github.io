@@ -68,13 +68,6 @@ app.controller('MainController', function($scope, $firebaseArray) {
 		})
 	}
 
-	$scope.masterSetUsername = function(un) {
-		$scope.$apply(function() {
-			$scope.username = un;
-		});
-		console.log($scope.username);
-	}
-
 	$scope.getCurrentTime = function() {
 		var d = new Date();
 		var hour = d.getHours();
