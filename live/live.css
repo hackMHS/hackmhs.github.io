@@ -159,4 +159,66 @@ nav ul li:hover {
   overflow-y: hidden;
 }
 
+.mentor-bios-title {
+    text-align: center;
+}
 
+.mentor-list-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.mentor-list-item .pic {
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.mentor-list-item .info {
+    padding: 0px 20px;
+}
+
+.mentor-list-item h3 {
+    font-family: "Avenir-Heavy";
+    margin-top: 20px;
+}
+
+.mentor-list-item strong {
+    font-family: "Avenir-Heavy";
+}
+
+@media screen and (min-width: 601px) {
+    .mentor-bios-title {
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    .mentor-list-item {
+        text-align: left;
+    }
+    
+    .mentor-list-item .pic {
+        float: left;
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .mentor-list-item h3 {
+        margin-top: 4px;
+    }
+    
+    .mentor-list-item .info {
+        margin-left: 150px;
+        padding: 0px 20px;
+        min-height: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mentor-list-item {
+        min-height: 260px;
+    }
+}
