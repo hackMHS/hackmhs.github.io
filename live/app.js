@@ -8,9 +8,9 @@ $("#mentor-req").click(function() {
 
 $("#sendRequest").click(function() {
 	angular.element($(".main")).scope().sendRequest();
-	angular.element($(".main")).scope().addAlert("Your request has been successfully submitted!");
-	$(".overlay").fadeIn(500);
-	$(".alert").fadeIn(500);
+	alert("Your request has been submitted! A mentor should be on his/her way to your table shortly.")
+	$(".overlay").fadeOut(500);
+	$(".alert").fadeOut(500);
 });
 
 $("#newMsg").keypress(function (event) {
