@@ -14,6 +14,19 @@
 
 <body ng-app="app">
 
+	<div class="overlay"></div>
+
+    <div id="mentor-req-form" class="alert">
+        <h2 class="title">request a <span class="heavy">mentor</span></h2>
+        <p>Fill out this form, and we'll send a mentor over to help!</p>
+        <input class="name" placeholder="your name"></input><br>
+        <input class="teamName" placeholder="team or project name"></input><br>
+        <input class="tableNumber" placeholder="table number"></input><br>
+        <input class="details" placeholder="what do you need help with?"></input>
+        <div class="button" id="sendRequest">send request</div>
+        <p style="text-align:center;color:#808080" class="close-button">never mind</p>
+    </div>
+
 	<header>
 
 		<div class="content">
@@ -22,50 +35,29 @@
 	
 	</header>
 
-	<nav>
+	 <nav>
         <ul>
-          <li><a href="live">dashboard</a></li>
-          <li><a href="info">info</a></li>
-          <li><a href="mentors">mentors</a></li>
-          <li><a href="resources">resources</a></li>
-          <li><a href="//hackmhs.hackerearth.com/">submit project</a></li>
-          <li id="mentor-req">request mentor</a></li>
+          <li><a href="/live"><i class="fa fa-home"></i> dashboard</a></li>
+          <li><a href="mentors/"><i class="fa fa-question-circle"></i> mentors</a></li>
+          <li><a href="resources/"><i class="fa fa-info-circle"></i> resources</a></li>
+          <li><a href="prizes"><i class="fa fa-trophy"></i> prizes</a></li>
+          <li><a href="//hackmhs.hackerearth.com/" target="_blank"><i class="fa fa-external-link"></i> submit project</a></li>
+          <li id="mentor-req"><i class="fa fa-heart"></i> request mentor</a></li>
         </ul>
     </nav>
 
   	<div id="now" ng-controller="NowController">
 		<div class="container">
-			<h3>What's happening now</h3>
-			<p>{{ tweet }}</p>
-			<p>&emdash; @hackMHS</p>
+			<h3>{{ tweet }}</h3>
+			<p style="color:#cdcdcd">&mdash; hackMHS</p>
 		</div>
 	</div>
 
 	<div class="main" ng-controller="MainController">
 
 		<div class="col-md-12">
-			<div class="col-md-6">
-				<a class="twitter-timeline" href="https://twitter.com/hashtag/hackMHS" data-widget-id="733867141959712768">#hackMHS Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div>
 
-			<div class="col-md-6">
-				<div class="section" id="chat">
-				<h2 class="title">hacker <span class="heavy">chat</span></h2>
-				<p>You are <b>{{ username }}</b> <span class="changeUsername">change my username</span></p></span>
-				<div class="container" id="chatWindow">
-					<ul id="chatList">
-						<li ng-repeat="msg in chat">
-							<p class="user">{{ msg.user }}</p>
-							<p class="message">{{ msg.message }}</p>
-						</li>
-					</ul>
-				</div>
-				<input id="newMsg" placeholder="type and press enter"></input>
-			</div>
-		</div>
-
-		<div class="col-md-12">
+		<div class="col-md-6">
 
 			<div class="section" id="schedule">
 				<h2 class="title">event <span class="heavy">schedule</span></h2>
@@ -185,7 +177,7 @@
 			        </tr>
 			        <tr>
 			          <td class="time">9-10 am</td>
-			          <td class="event">insider's guide to programming interviews</td>
+			          <td class="event">insider's guide to<br> programming interviews</td>
 			          <td class="location">112</td>
 			        </tr>
 			        <tr>
@@ -214,9 +206,31 @@
 			          <td class="location">auditorium</td>
 			        </tr>
 			     </table>
-			     </div>
-			    </div>
-			</div>	
+			     </div> <!-- sch -->
+			    </div> <!-- sch wrapper -->
+			</div>	<!-- schedule -->
+		</div>
+
+		<div class="col-md-6">
+
+			<a class="twitter-timeline" href="https://twitter.com/search?q=%40hackMHS" data-widget-id="733900871881359360">Tweets about @hackMHS</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+			<div class="section" id="chat">
+				<h2 class="title">hacker <span class="heavy">chat</span></h2>
+				<p>You are <b>{{ username }}</b> <span class="changeUsername">change my username</span></p></span>
+				<div class="container" id="chatWindow">
+					<ul id="chatList">
+						<li ng-repeat="msg in chat">
+							<p class="user">{{ msg.user }}</p>
+							<p class="message">{{ msg.message }}</p>
+						</li>
+					</ul>
+				</div>
+				<input id="newMsg" placeholder="type and press enter"></input>
+			</div>
+
+		</div>
 		</div>
 	</div>
 
@@ -225,6 +239,14 @@
     <!-- Controllers-->
     <script src="mc.js"></script>
     <script src="now.js"></script>
+
+    <script type="text/javascript">
+    	$(window).load(function() {
+			angular.element($(".main")).scope().genRandUsername();
+			var chat = document.getElementById("chatList")
+		    setTimeout(function() {chat.scrollTop = chat.scrollHeight;}, 2000);
+		});
+    </script>
 
 </body>
 </html>
