@@ -175,6 +175,7 @@ ul.social li a:hover {
   background: #273775;
   color: white;
   padding: 10px;
+  text-align: center;
 }
 
 #now h3 {
@@ -263,7 +264,7 @@ ul.social li a:hover {
 }
 
 .mentor-bios-title {
-    text-align: center;
+    text-align: center !important;
 }
 
 .mentor-list-item {

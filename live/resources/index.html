@@ -1,20 +1,3 @@
-<script>
-    var prizes = [
-        {
-            name: "Best Overall",
-            sponsor: "Sponsored by MLH &amp; MLH Launch",
-            description: "The two teams with the best hacks overall.",
-            prize: "4 Dell tablets, 4 drones",
-        },
-        {
-        	name: "Best Hardware Hack",
-        	sponsor: "",
-        	description: "The two teams with the best hacks overall",
-        	prize: "Hello"
-        }
-    ]
-</script>
-
 <html>
 <head>
     <title>Live | hackMHS II</title>
@@ -72,23 +55,8 @@
 
     <div class="main container" ng-controller="MainController">
         <div class="row mentors-list">
-            <center><h2><span class="heavy">prize</span> categories</h2></center>
-            <script>
-                for (var i in prizes) {
-                    var prize = prizes[i];
-                    $(".mentors-list").append(
-                        $("<div class='col-md-6 mentor-list-item'>" +
-                                "<div class='info'>" +
-                                    "<h3>" + prize.name + "</h3>" +
-                                    "<h4>" + prize.sponsor + "</h4>" +
-                                    "<p>" + prize.description + "</p>" +
-                                    "<p>" + prize.prize + "</p>" +
-                                "</div>" +
-                          "</div>"
-                         )
-                    );
-                }
-            </script>
+            <h2>links and <span class="heavy">resources</span></h2>
+            
         </div>
     </div>
 
