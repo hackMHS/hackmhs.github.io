@@ -2,6 +2,7 @@ var app = angular.module("app", ["firebase"]);
 
 $(window).load(function() {
 	angular.element($(".main")).scope().genRandUsername();
+	angular.element($("#now")).scope().getTweet();
 	var chat = document.getElementById("chatList")
     setTimeout(function() {chat.scrollTop = chat.scrollHeight;}, 2000);
 });

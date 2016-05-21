@@ -20,7 +20,6 @@ app.controller('MainController', function($scope, $firebaseArray) {
 		  url: 'https://randomuser.me/api/',
 		  dataType: 'json',
 		  success: function(data){
-		  	console.log(data.results[0]);
 		    $scope.username = data.results[0].login.username;
 		  }
 		});

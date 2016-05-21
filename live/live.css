@@ -20,9 +20,18 @@ body {
   letter-spacing: -0.02rem;
 }
 
+a:hover {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .main {
   padding: 25px;
-  width: 80%;
+  width: 90%;
+  margin: auto;
+}
+
+.main div {
   margin: auto;
 }
 
@@ -31,6 +40,7 @@ header {
   color: white;
   text-align: center;
   padding: 20px;
+  height: 100px;
 }
 
 header .content div {
@@ -39,6 +49,37 @@ header .content div {
 
 header .logo img {
   width: 60px;
+}
+
+nav {
+  width: 100%;
+  padding: 5px;
+  max-height: 50px;
+  color: white;
+  background: #2f4c9f;
+  overflow: hidden;
+  z-index: 100;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding-left: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 5px 15px;
+  opacity: 0.75;
+}
+
+nav ul li:hover {
+  opacity: 1;
 }
 
 .title {
@@ -54,10 +95,23 @@ header .logo img {
   color: #41c4ff;
 }
 
+
+/* NOW */
+
+#now {
+  background: #273775;
+  color: white;
+  padding: 10px;
+}
+
+#now h2 {
+   letter-spacing: -0.04rem;
+}
+
 /* CHAT */
 
 #chat {
-  height: 250px;
+  height: 300px;
 }
 
 #chat ul#chatList {
@@ -96,6 +150,8 @@ header .logo img {
 
 #chat input {
   margin-top: 25px;
+  padding: 15px 5px;
+  width: 380px;
 }
 
 #chat #chatWindow {
