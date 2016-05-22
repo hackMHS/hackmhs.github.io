@@ -1,6 +1,6 @@
 app.controller('NowController', function($scope) {
 
-	$scope.tweet = "Melee and Hearthstone tournament signups are outside the cafeteria! They close at 8:30pm.";
+	$scope.tweet = "Doors will close at 12am. Please make sure you get your stuff and be back before then.";
 
 	// ??
 	
