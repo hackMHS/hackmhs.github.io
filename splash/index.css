@@ -1,0 +1,279 @@
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+
+  font-size: 1.25em;
+  color: #404040;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: 10px auto;
+}
+
+.heavy {
+
+  color: #41c4ff;
+}
+
+
+
+
+header {
+  min-height: 100%;
+  text-align: center;
+}
+
+header .container {
+  width: 80%;
+  margin: auto;
+  padding-top: 8%;
+  color: #202020;
+}
+
+header h1 {
+
+  font-size: 3.5em;
+  margin: auto;
+  line-height: 1.25em;
+  padding: 0;
+}
+
+header h1 span {
+  margin: -0.04em;
+}
+
+header img {
+  max-height: 200px;
+}
+
+header p {
+  margin: 0.5em;
+}
+
+div.button {
+  background: #606060;
+  color: white;
+  padding: 15px;
+  max-width: 200px;
+  margin: 25px auto;
+  font-size: 1.25em;
+
+  border-radius: 5px;
+}
+
+div.button:hover {
+  background: #606060;
+}
+
+*, *:hover {
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+ul.social {
+  padding-left: 0;
+  margin: auto;
+  padding: 10px;
+  list-style-type: none;
+}
+
+ul.social li {
+  display: inline-block;
+}
+
+ul.social li a {
+  color: inherit;
+  opacity: 0.8;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+ul.social li a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+section {
+  background: white;
+  padding: 50px;
+}
+
+section .container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+section h1 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: normal;
+}
+
+section a {
+  color: #41c4ff;
+  border-bottom: 1px dotted #21a2ef;
+}
+
+#about {
+  text-align: center;
+}
+
+#about img {
+  width: 175px;
+}
+
+#about p {
+  max-width: 500px;
+  margin: auto;
+}
+
+#about {
+  background: linear-gradient(0deg, rgba(30, 110, 190, 0.9), rgba(0, 70, 180, 0.9));
+  color: white;
+  text-align: center;
+}
+
+#faq {
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+#faq ul, #classes ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#faq ul li {
+  width: 400px;
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 20px;
+  text-align: left;
+}
+
+#faq h3, #classes h3 {
+
+}
+
+#schedule {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#schedule table {
+  margin: auto;
+}
+
+#schedule td {
+  padding: 15px;
+  background: #37bcfc;
+  color: white;
+  font-weight: bold;
+}
+
+#schedule tr:nth-child(1) td {
+  background: inherit;
+  color: inherit;
+}
+
+#schedule td.double {
+  background: #5a85ef;
+}
+
+#schedule td .grade-range {
+  font-weight: normal;
+  color: #eeeeee;
+}
+
+#classes h2 {
+  padding-top: 75px;
+  font-family: 'Avenir Heavy';
+  color: #41c4ff;
+  text-align: center;
+}
+
+#classes li {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+
+#classes li p {
+  margin: 5px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #0a2077;
+  color: white;
+  font-size: 0.75em;
+}
+
+footer ul.social {
+  padding: 0px;
+}
+footer ul.social li {
+  padding-top: 0px;
+}
+footer p a {
+  border-bottom: 1px dotted white;
+}
+
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: 1em;
+  }
+  header {
+    height: auto;
+  }
+  header input, .fa {
+    font-size: 1em;
+  }
+  header h1 {
+    font-size: 3em;
+  }
+  header img {
+    max-height: 125px;
+  }
+
+  header .container {
+    padding-top: 100px;
+  }
+  #about img {
+    width: 100px;
+  }
+  #faq {
+    padding: 0px;
+  }
+  #faq ul li {
+    max-width: 100%;
+    display: block;
+    padding: 5px 0px;
+    margin: 0;
+    text-align: center;
+  }
+  section {
+    padding: 10px;
+    overflow: hidden;
+  }
+  section .container {
+    width: 90%;
+  }
+}
