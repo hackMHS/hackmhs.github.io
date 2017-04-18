@@ -152,6 +152,8 @@ section a {
 #faq {
   text-align: center;
   padding-bottom: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #faq ul, #classes ul {
@@ -276,4 +278,9 @@ footer p a {
   section .container {
     width: 90%;
   }
+}
+
+#faq {
+  padding-left: 10vw;
+  padding-right: 10vw  ;
 }
