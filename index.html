@@ -48,6 +48,8 @@
 
 <body>
 
+
+
   <script>
   $(document).ready(function() {
 	$(window).scroll(function() {
@@ -208,17 +210,41 @@ $(document).ready(function(){
 
            </div>
 
-
-         </div>
-         <div class = "row">
-           <div class="col s6">
+           <div class="col s12 m6 l3">
              <li>
                <h3>I have a question that isn't answered here.</h3>
                <p>Feel free to email us your questions at <a href="mailto:hackatmhs@gmail.com">hackatmhs@gmail.com</a>. We'll be happy to answer them!</p>
              </li>
+
            </div>
+
+
+
          </div>
-         <div class="col s12 m6 l3">
+         <div class = "row">
+
+         <style>
+         #map {
+          height: 300px;
+          width: 100%;
+          border: 1px solid #42a5f5;
+         }
+         </style>
+         <div class = "col s9">
+           <div id="map"></div>
+        </div>
+        <div class="col s3">
+          <li>
+            <h3>Where is it?</h3>
+            <p>hackMHS IV is located at the Millburn High School (462 Millburn Ave). It is accessible via exit 9A on Route 24, which can be accessed via Exit 48 via I-78 Express</p>
+          </li>
+
+        </div>
+
+         </div>
+
+
+
 
        </div>
 
@@ -226,6 +252,7 @@ $(document).ready(function(){
        </div>
     </section>
   </div>
+
 
   <!-- Info
   --------------------------------------------------->
@@ -266,6 +293,8 @@ $(document).ready(function(){
       </div>
     </div>
   </div>
+
+
 
   <!-- Registration
   --------------------------------------------------->
@@ -327,6 +356,8 @@ $(document).ready(function(){
 
 
          </div>
+
+
          <div class="col s6">
 
            <div id="mc_embed_signup">
@@ -416,6 +447,25 @@ $(document).ready(function(){
 
    </div>
  </section>
+
+
+
+<script>
+  function initMap() {
+    var uluru = {lat: 40.720490, lng: -74.315696};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoDePemLw0HVst66bBdUK5rwcFZeW5eRU&callback=initMap">
+</script>
 
 
 

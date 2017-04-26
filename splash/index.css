@@ -28,7 +28,10 @@ h1{
 .transparent {
   box-shadow: none;
 }
-
+#map {
+ height: 400px;
+ width: 700px;
+}
 .about {
     padding-top: 20vh;
     width: 100vw;
@@ -87,4 +90,17 @@ footer{
 
 .faq-header {
   text-align: center;
+}
+.where {
+  height: 500px;
+  width: 100%;
+  
+  color: white;
+  background: #42a5f5;
+  background: -moz-linear-gradient(-45deg, #42a5f5 0%, #5479a5 100%);
+  background: -webkit-linear-gradient(-45deg, #42a5f5 0%,#5479a5 100%);
+  background: linear-gradient(135deg, #42a5f5 0%,#5479a5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42a5f5', endColorstr='#5479a5',GradientType=1 );
+
+
 }
