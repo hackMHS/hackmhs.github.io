@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--
+  Made By: Teo Nys, with help from the hackMHS Team 2017
+
+  Credits:
+  Css Framework - Skeleton
+  Js - jQuey
+
+  -->
+
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <meta charset="utf-8">
+  <title>hackMHS IV</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/materialize.min.js"></script>
+
+    <script src="js/init.js"></script>
+
+    <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+
+  <script>
+  $(document).ready(function() {
+	$(window).scroll(function() {
+  	if($(document).scrollTop() > 1000) {
+      $('#nav').removeClass('transparent');
+      $('#wrap').addClass('blue');
+      $('#wrap').addClass('darken-2');
+    }
+    else {
+    $('#nav').addClass('transparent');
+    }
+  });
+
+});
+
+$(document).ready(function(){
+ $('.scrollspy').scrollSpy();
+});
+  </script>
+
+
+
+
+  <!-- Navbar
+  --------------------------------------------------->
+  <div class = "navbar-fixed" >
+    <nav id = "nav" class = "transparent">
+      <div id = "wrap" class="nav-wrapper">
+        <a href="#" class="brand-logo"><img  class = "logo-nav" src = "images/logo-white.png"/a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#info">Information</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#reg">Registration</a></li>
+          <li><a href="/splash/index.html">Splash</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Banner
+  --------------------------------------------------->
+  <div class = "banner">
+    <div id="index-banner" >
+      <div class="section no-pad-bot">
+        <div class="container">
+          <img style = "margin-bottom: -30px;" height="175px" src="images/logo-white.png">
+          <h1 class="header center white-text ">hack<span style = "font-weight: 600">MHS</span> IV </h1>
+          <div class="row center">
+            <h5 class="header col s12 light white-text">Learn. Create. Discover. | Millburn, NJ. May 27, 2017.</h5>
+          </div>
+          <div class="row center">
+            <a href="#faq" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Get Started</a>
+            <a href="#reg" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Registration</a>
+          </div>
+          <br><br>
+
+        </div>
+      </div>
+      <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+  </div>
+
+  <!-- FAQ
+  --------------------------------------------------->
+  <div class ="faq scrollspy" id = "faq">
+    <section >
+      <div class="container">
+
+        <div class = "faq-header"> frequently asked <span style = "font-weight: 600;">questions</span> </div>
+        <ul>
+
+            <div class="row">
+             <div class="col s12 m6 l3">
+               <li>
+                 <h3>Who can attend?</h3>
+                 <p>Any high school student is welcome to apply! If you're in middle school, you may attend if you are at least 13 years old. Absolutely no coding experience is necessary.</p>
+               </li>
+               <li>
+             </div>
+             <div class="col s12 m6 l3">
+               <li>
+                 <h3>What if I've never been to a hackathon before?</h3>
+                 <p>You can let us be your first :) In fact, hackMHS is designed with first-time hackers in mind, with many mentors and workshops to guide you along the way!</p>
+               </li>
+             </div>
+             <div class="col s12 m6 l3">
+               <li>
+                 <h3>How much does it cost?</h3>
+                 <p>Nothing at all! hackMHS is completely free to all participants. While you're here, you'll get free food and free stuff.</p>
+               </li>
+             </div>
+             <div class="col s12 m6 l3">
+               <li>
+                 <h3>Will you provide travel reimbursement?</h3>
+                 <p>Sorry, we're currently unable to provide travel reimbursement.</p>
+               </li>
+               <li>
+             </div>
+           </div>
+
+
+           <div class = "row">
+             <div class="col s12 m6 l3">
+               <li>
+                 <h3>How long will the event last?</h3>
+                 <p>hackMHS will last Saturday morning through Sunday afternoon. The hacking period will be 24 hours.</p>
+               </li>
+
+             </div>
+
+             <div class="col s12 m6 l3">
+               <li>
+                 <h3>I'm a parent concerned about safety. Is hackMHS safe?</h3>
+                 <p>Yes; safety is our first priority. As we are sanctioned by Major League Hacking (MLH), all attendees agree to abide by the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>. For MLH's Parent's Guide to Hackathons, click <a href="https://mlh.io/parent-hackathon-guide">here</a>.</p>
+               </li>
+
+             </div>
+
+             <div class="col s12 m6 l3">
+               <li>
+                 <h3>Do students sleep overnight?</h3>
+                 <p>Students are encouraged, although not required, to stay overnight as part of the hackathon experience. There will be designated quiet areas for sleeping. If you are uncomfortable staying overnight, you may be picked up by a parent.</p>
+               </li>
+
+             </div>
+
+             <div class="col s12 m6 l3">
+               <li>
+                 <h3>When are applications open?</h3>
+                 <p> Applications are currently open, Registration is linked below click <a href = "#reg">here</a></p>
+               </li>
+             </div>
+
+         </div>
+
+         <div class = "row">
+           <div class="col s12 m6 l3">
+             <li>
+               <h3>What should I bring?</h3>
+               <p>Bring your laptop, phone, chargers, a sleeping bag (if desired), and excitement about learning new things!</p>
+             </li>
+
+           </div>
+
+           <div class="col s12 m6 l3">
+             <li>
+               <h3>How will you decide between applicants?</h3>
+               <p>Participants will be selected by a random lottery. Each round of accepted students will have 2-3 days to RSVP.</p>
+             </li>
+
+           </div>
+
+           <div class="col s12 m6 l3">
+             <li>
+               <h3>Do I need to join a team beforehand?</h3>
+               <p>Nope! We encourage you to meet new students during team formation at the beginning of the event. We recommend you form a team of up to 4 students.</p>
+             </li>
+
+           </div>
+
+           <div class="col s12 m6 l3">
+             <li>
+               <h3>I have a question that isn't answered here.</h3>
+               <p>Feel free to email us your questions at <a href="mailto:hackatmhs@gmail.com">hackatmhs@gmail.com</a>. We'll be happy to answer them!</p>
+             </li>
+
+           </div>
+
+
+
+         </div>
+         <div class = "row">
+
+         <style>
+         #map {
+          height: 300px;
+          width: 100%;
+          border: 1px solid #42a5f5;
+         }
+         </style>
+         <div class = "col s9">
+           <div id="map"></div>
+        </div>
+        <div class="col s3">
+          <li>
+            <h3>Where is it?</h3>
+            <p>hackMHS IV is located at the Millburn High School (462 Millburn Ave). It is accessible via exit 9A on Route 24, which can be accessed via Exit 48 via I-78 Express</p>
+          </li>
+
+        </div>
+
+         </div>
+
+
+
+
+       </div>
+
+
+       </div>
+    </section>
+  </div>
+
+
+  <!-- Info
+  --------------------------------------------------->
+  <div class = "info scrollspy" id = "info">
+    <div class="container">
+      <div class="section">
+
+
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center white-text">hackMHS</h2>
+
+              <p class="light">hackMHS is about building a close community in which students of all backgrounds can make new friends, learn new skills, and grow as developers.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center white-text">Events</h2>
+
+              <p class="light">Whether you love music, gaming, design, hardware, biology, or more, come to hackMHS to discover where your interests meet technology, and collaborate with other enthusiastic students to build a cool project.</p>
+
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center white-text">Splash</h2>
+
+
+              <p class="light">Millburn Splash is an afternoon of mini, interactive classes for students in grades 1-8, taught by students at Millburn High School. The classes cover a wide variety of topics, from origami to entrepreneurship to robotics!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Registration
+  --------------------------------------------------->
+  <div class = "registration-container scrollspy" id = "reg">
+    <div class= "container">
+         <div class="col s6">
+
+           <div id="mc_embed_signup">
+           <form action="//hackmhs.us12.list-manage.com/subscribe/post?u=ed4a703e69c0dfd4fdd88730f&amp;id=b9e4a423b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+            <h2>Registration for Atendees</h2>
+           <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+           <div class="mc-field-group">
+            <label for="mce-FNAME">First Name </label>
+            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-LNAME">Last Name </label>
+            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+           </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-MMERGE3">Grade </label>
+            <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+           </div>
+           <div class="mc-field-group size1of2">
+            <label for="mce-MMERGE4">Phone Number </label>
+            <input type="text" name="MMERGE4" class="" value="" id="mce-MMERGE4">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-MMERGE5">Any dietary restrictions? (if not write &quot;none&quot;) </label>
+            <input type="text" value="" name="MMERGE5" class="" id="mce-MMERGE5">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-MMERGE6">List your previous experiences ? </label>
+            <input type="text" value="" name="MMERGE6" class="" id="mce-MMERGE6">
+           </div>
+           <div class="mc-field-group input-group">
+              <strong>Newsletter </strong>
+              <ul><li><input type="checkbox" value="1" name="group[12993][1]" id="mce-group[12993]-12993-0"><label for="mce-group[12993]-12993-0">Yes, I would like to receive updates via email</label></li>
+           <li><input type="checkbox" value="2" name="group[12993][2]" id="mce-group[12993]-12993-1"><label for="mce-group[12993]-12993-1">No, I would not like to receive updates via email</label></li>
+           </ul>
+           </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed4a703e69c0dfd4fdd88730f_b9e4a423b0" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large blue lighten-1"></div>
+              </div>
+           </form>
+           </div>
+           <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='phone';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+           <!--End mc_embed_signup-->
+
+
+         </div>
+
+
+         <div class="col s6">
+
+           <div id="mc_embed_signup">
+           <form action="//hackmhs.us12.list-manage.com/subscribe/post?u=ed4a703e69c0dfd4fdd88730f&amp;id=b9e4a423b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+            <h2>Registration for Mentors</h2>
+           <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+           <div class="mc-field-group">
+            <label for="mce-FNAME">First Name </label>
+            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-LNAME">Last Name </label>
+            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+           </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-MMERGE3">Grade </label>
+            <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+           </div>
+           <div class="mc-field-group size1of2">
+            <label for="mce-MMERGE4">Phone Number </label>
+            <input type="text" name="MMERGE4" class="" value="" id="mce-MMERGE4">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-MMERGE5">Any dietary restrictions? (if not write &quot;none&quot;) </label>
+            <input type="text" value="" name="MMERGE5" class="" id="mce-MMERGE5">
+           </div>
+           <div class="mc-field-group">
+            <label for="mce-MMERGE6">List your previous experiences ? </label>
+            <input type="text" value="" name="MMERGE6" class="" id="mce-MMERGE6">
+           </div>
+           <div class="mc-field-group input-group">
+              <strong>Newsletter </strong>
+              <ul><li><input type="checkbox" value="1" name="group[12993][1]" id="mce-group[12993]-12993-0"><label for="mce-group[12993]-12993-0">Yes, I would like to receive updates via email</label></li>
+           <li><input type="checkbox" value="2" name="group[12993][2]" id="mce-group[12993]-12993-1"><label for="mce-group[12993]-12993-1">No, I would not like to receive updates via email</label></li>
+           </ul>
+           </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed4a703e69c0dfd4fdd88730f_b9e4a423b0" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large blue lighten-1"></div>
+              </div>
+           </form>
+           </div>
+           <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='phone';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+           <!--End mc_embed_signup-->
+
+
+         </div>
+
+     </div>
+   </div>
+
+   <!-- Five -->
+
+  <section class = "spons-reg scrollspy" class="wrapper style2 special fade">
+   <div class="container">
+
+        <div id="mc_embed_signup">
+        <form action="//hackmhs.us12.list-manage.com/subscribe/post?u=ed4a703e69c0dfd4fdd88730f&amp;id=d53eaabff9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+        	<h5>Interested in Sponsoring Us?</h5>
+        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+        <div class="mc-field-group">
+        	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+        </label>
+        	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        	<div id="mce-responses" class="clear">
+        		<div class="response" id="mce-error-response" style="display:none"></div>
+        		<div class="response" id="mce-success-response" style="display:none"></div>
+        	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed4a703e69c0dfd4fdd88730f_d53eaabff9" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large blue lighten-1"></div>
+            </div>
+        </form>
+        </div>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+
+   </div>
+ </section>
+
+
+
+<script>
+  function initMap() {
+    var uluru = {lat: 40.720490, lng: -74.315696};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoDePemLw0HVst66bBdUK5rwcFZeW5eRU&callback=initMap">
+</script>
+
+
+
+
+
+
+
+  <!-- Footer
+  --------------------------------------------------->
+  <footer>
+    <p>Made with ♥ by Teo Nys.<br>By attending hackMHS, you are agreeing to abide by the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.</p>
+    <ul class="social">
+        <li><a href="mailto:hackatmhs@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="//facebook.com/hackmhs"><i class="fa fa-facebook-official"></i></a></li>
+        <li><a href="//twitter.com/hackmhs"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+  </footer>
+
+
+
+
+
+
+ <!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+
+</html>
