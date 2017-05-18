@@ -7,8 +7,8 @@ h2 {
   font-size: 2.6em;
 }
 
-h4 {
-  font-size: 3em;
+  h4 {
+    font-size: 3em;
   text-decoration: none;
 }
 
@@ -35,17 +35,13 @@ h1{
 .about {
     padding-top: 20vh;
     width: 100vw;
-    height: 100vh;
-    background: linear-gradient(45deg, rgba(10, 140, 200, 0.5), rgba(20, 30, 130, 0.5)), url('https://scontent-lga3-1.xx.fbcdn.net/v/t35.0-12/14632608_1684987571819751_997197675_o.jpg?oh=bc00ba2bde81fbf3905e752213070390&oe=58FA6ED3');
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 60vh;
     overflow: hidden;
     margin-top: -64px;
     text-align: center;
     color: white;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 30vh;
 
 
 }
@@ -94,7 +90,7 @@ footer{
 .where {
   height: 500px;
   width: 100%;
-  
+
   color: white;
   background: #42a5f5;
   background: -moz-linear-gradient(-45deg, #42a5f5 0%, #5479a5 100%);
@@ -103,4 +99,14 @@ footer{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42a5f5', endColorstr='#5479a5',GradientType=1 );
 
 
+}
+
+.schedule {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #1e5799;
+  background: -moz-linear-gradient(-45deg, #1e5799 0%, #207cca 51%);
+  background: -webkit-linear-gradient(-45deg, #1e5799 0%,#207cca 51%);
+  background: linear-gradient(135deg, #1e5799 0%,#207cca 51%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=1 );
 }
