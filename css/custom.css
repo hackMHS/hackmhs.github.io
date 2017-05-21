@@ -122,7 +122,20 @@ footer {
 
 
 
+.sponsors {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
 
+.s-image {
+  max-height: 70px;
+  margin-left: 30px;
+}
 
+.s-image:hover {
+  opacity: .6;
+
+}
 
 /* Phone */
