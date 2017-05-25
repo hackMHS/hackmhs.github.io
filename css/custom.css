@@ -120,6 +120,10 @@ footer {
   }
 }
 
+.schedule {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 
 .sponsors {
@@ -137,5 +141,6 @@ footer {
   opacity: .6;
 
 }
+
 
 /* Phone */
