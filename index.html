@@ -106,8 +106,8 @@ $(document).ready(function(){
             <h5 class="header col s12 light white-text">Learn. Create. Discover. | Millburn, NJ. May 27, 2017.</h5>
           </div>
           <div class="row center">
-            <a href="#faq" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Get Started</a>
-            <a href="#reg" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Registration</a>
+            <a href="#schedule" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Schedule</a>
+            <a href="#reg" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Dev-Post</a>
           </div>
           <br><br>
 
@@ -299,10 +299,12 @@ $(document).ready(function(){
     </div>
   </div>
 
-  <div class = "schedule">
+  <div class = "schedule scrollspy" id = "schedule">
     <div class = "container">
+       <div class = "faq-header" style = "font-size: 4em; text-align: center;"> hackathon<span style = "font-weight: 600;"> Schedule</span> </div>
+       <div style = "margin-top: 100px;">
       <h3> Saturday 27th Schedule </h3>
-      <table class = "table bordered">
+      <table class = "table bordered" >
            <thead>
              <tr>
                  <th>Times</th>
@@ -428,12 +430,97 @@ $(document).ready(function(){
             </table>
        </div>
      </div>
+     </div>
 
+     <div class ="faq scrollspy" id = "faq">
+       <section >
+         <div class="container">
 
+           <div class = "faq-header"> Workshop<span style = "font-weight: 600;"> Descriptions</span> </div>
+           <ul>
 
+               <div class="row">
+                <div class="col s12 m6 ">
+                  <li>
+                    <h3>Intro to Programming in Java</h3>
+                    <p>
+Want to learn how to code? You’ve come to the right place! Learn key concepts in programming, including variables, if-statements, loops, and more, using the popular language Java. This course will provide a welcoming environment that will allow attendees to explore the language with guidance and collaboration. Please download Netbeans (Java EE) ahead of time.
+</p>
+                  </li>
+                  <li>
+                </div>
+                <div class="col s12 m6 ">
+                  <li>
+                    <h3>Advanced Java/Software Design</h3>
+                    <p>So you know basic Java, what next? This workshop will teach you the next steps, covering object-oriented programming including classes, inheritance, polymorphism, and how to use these principles to create a powerful and flexible backend software design. Please download Netbeans (Java EE) ahead of time.</p>
+                  </li>
+                </div>
+              </div>
+              <div class="row">
+               <div class="col s12 m6 ">
+                 <li>
+                   <h3>Web Design: HTML & CSS
+</h3>
+                   <p>
+Learn the fundamentals of HTML and CSS, languages that define the content, layout, and style of modern web pages. Please download the trial version of sublime ahead of time as well as chrome or firefox.  </p>
+                 </li>
+                 <li>
+               </div>
+               <div class="col s12 m6 ">
+                 <li>
+                   <h3>Javascript and APIs
+</h3>
+                   <p>Now that you know HTML and CSS, you can learn the last piece of the front-end web development puzzle: Javascript! Javascript makes websites interactive. Application programming interfaces (APIs) help developers retrieve and manipulate data from other sources such as spotify. Please create a spotify account ahead of time, download the trial version of sublime, and download node.js, as well as chrome or firefox.
+</p>
+                 </li>
+               </div>
+             </div>
 
-  <!-- Registration
-  --------------------------------------------------->
+             <div class="row">
+              <div class="col s12 m6 ">
+                <li>
+                  <h3>iOS
+</h3>
+                  <p>
+Learn how to create iOS apps!  This intro class will be taught in Swift with XCode.  Requirements: Mac Laptop with XCode Installed (can be found on Mac App Store), basic programming knowledge
+</p>
+                </li>
+                <li>
+              </div>
+              <div class="col s12 m6 ">
+                <li>
+                  <h3>
+Entrepreneurship
+</h3>
+                  <p>So you know basic Java, what next? This workshop will teach you the next steps, covering object-oriented programming including classes, inheritance, polymorphism, and how to use these principles to create a powerful and flexible backend software design. Please download Netbeans (Java EE) ahead of time.</p>
+                </li>
+              </div>
+            </div>
+
+            <div class="row">
+             <div class="col s12 m6 ">
+               <li>
+                 <h3>Graphic Design
+</h3>
+                 <p>
+With the skills you’ll learn in this workshop, you will be able to create graphic design. From learning how to improve user experience, to the basics of photoshop, you will be able to use the skills you learn for your coding projects. Please download the free trial for Photoshop beforehand.
+</p>
+               </li>
+               <li>
+             </div>
+             <div class="col s12 m6 ">
+               <li>
+                 <h3>Engineering Sketching
+</h3>
+                 <p>Interested in improving your skills in visualization and design, and exploring skills in mechanical engineering? Practice and expand your visualization, and learn the industry standards for presenting engineering drawings, including how to design and draw 3D parts to send to professional manufacturers. </p>
+               </li>
+             </div>
+           </div>
+
+          </div>
+       </section>
+     </div>
+<!--
   <div class = "registration-container scrollspy" id = "reg">
     <div class= "container">
          <div class="col s6">
@@ -487,17 +574,19 @@ $(document).ready(function(){
             <div id="mce-responses" class="clear">
               <div class="response" id="mce-error-response" style="display:none"></div>
               <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            </div>
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed4a703e69c0dfd4fdd88730f_b9e4a423b0" tabindex="-1" value=""></div>
               <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large blue lighten-1"></div>
               </div>
            </form>
            </div>
            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='phone';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-           <!--End mc_embed_signup-->
+
 
 
          </div>
+
+
 
        <div class = "space"></div>
          <div class="col s6">
@@ -526,21 +615,20 @@ $(document).ready(function(){
              	<div id="mce-responses" class="clear">
              		<div class="response" id="mce-error-response" style="display:none"></div>
              		<div class="response" id="mce-success-response" style="display:none"></div>
-             	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+             	</div>
                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed4a703e69c0dfd4fdd88730f_77c95f069b" tabindex="-1" value=""></div>
                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large blue lighten-1"></div>
                  </div>
              </form>
              </div>
              <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-             <!--End mc_embed_signup-->
 
 
          </div>
 
      </div>
    </div>
-
+ -->
    <!-- Five -->
 
   <section class = "spons-reg scrollspy" class="wrapper style2 special fade">
