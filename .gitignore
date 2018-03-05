@@ -1,3 +1,7 @@
 .idea/
 1
 node_modules/
+
+#Prepros stuff
+prepros.cfg
+prepros-6.config
