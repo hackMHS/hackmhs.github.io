@@ -88,6 +88,11 @@ footer{
 .faq-header {
   text-align: center;
 }
+
+.heavy {
+    font-weight: 600 !important;
+}
+
 .where {
   height: 500px;
   width: 100%;
