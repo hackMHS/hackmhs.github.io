@@ -124,3 +124,9 @@ footer{
   background: linear-gradient(135deg, #1e5799 0%,#207cca 51%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=1 );
 }
+
+@media (max-height: 600px) {
+    section.about > div.container {
+        font-size: 0.75rem;
+    }
+}
