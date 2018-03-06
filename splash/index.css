@@ -130,3 +130,18 @@ footer{
         font-size: 0.75rem;
     }
 }
+
+.date {
+border-right: 1px dashed #d0d0d0;
+}
+table tr td:first-child {
+  white-space:nowrap;
+  width:1px;
+}
+.date {
+  padding-right: 15px;
+  font-weight: 600;
+}
+.first {
+  padding-left: 20px;
+}
