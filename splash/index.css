@@ -142,6 +142,12 @@ table tr td:first-child {
   padding-right: 15px;
   font-weight: 600;
 }
+
+.tentative {
+    /*font-weight: 100 !important;*/
+    /*text-decoration: underline;*/
+    color: #7fe6ff !important;
+}
 table#schedule tr :nth-child(2) {
   padding-left: 20px;
 }
