@@ -53,6 +53,7 @@ section.about > div.container {
     left: 50%;
     transform: translate(-50%, -50%);
     /*width: vw;*/
+    font-size: 1.15em;
 }
 
 .info {
@@ -125,9 +126,21 @@ footer{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=1 );
 }
 
+
+
+@media (max-height: 800px) {
+    section.about > div.container {
+        font-size: 0.85em;
+    }
+}
+
 @media (max-height: 600px) {
     section.about > div.container {
-        font-size: 0.75rem;
+        font-size: 0.75em;
+    }
+    section.about > div.container a.btn-large {
+        height: 36px;
+        line-height: 36px;
     }
 }
 

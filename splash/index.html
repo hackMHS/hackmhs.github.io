@@ -33,21 +33,23 @@
       <div class="nav-wrapper  blue lighten-1">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a class="scroll" href="#about">about</a></li>
-          <li><a class="scroll"href="#faq">faq</a></li>
-          <li><a class="scroll" href="#classes">classes</a></li>
-          <li><a href="//hackmhs.com">hackMHS</a></li>
+          <li><a class="scroll" href="#faq">faq</a></li>
+          <li><a class="scroll" href="#schedule">classes</a></li>
+          <li><a href="/">hackMHS</a></li>
         </ul>
       </div>
     </nav>
   </div>
 
 
-  <section id="about" class = "about light-blue darken-4">
+  <section id="about" class = "scrollspy about light-blue darken-4">
     <div class="container">
       <h1>Millburn<span style = "font-weight: 600;">SPLASH</span></h1>
-      <p><b>Millburn Splash</b> is an afternoon of mini, interactive classes for students in grades 1-8, taught by students at Millburn High School. The classes cover a wide variety of topics, from origami to entrepreneurship to robotics!, For this splash we are taking the help of fellow parents to make sure splash is well organized.</p><br>
+      <p><b>Millburn Splash</b> is an afternoon of mini, interactive classes for students in grades 1-8, taught by students at Millburn High School. The classes cover a wide variety of topics, from origami to entrepreneurship to robotics!, For this splash we are taking the help of fellow parents to make sure splash is well organized.
+        <br><br>
 
-      <p>All proceeds from Millburn Splash support hackMHS. hackMHS is a student-organized event encouraging high school students to learn to code apps, games, and websites. To learn more about hackMHS, click <a href="//hackmhs.com">here</a>.</p>
+      All proceeds from Millburn Splash support hackMHS. hackMHS is a student-organized event encouraging high school students to learn to code apps, games, and websites. To learn more about hackMHS, click <a href="//hackmhs.com">here</a>.</p>
+      <a href="#registration" class="btn-large waves-effect waves-light blue lighten-1">Sign up now!</a>
     </div>
   </section>
 
@@ -55,7 +57,7 @@
 
 
 
-  <div class = "faq">
+  <div class = "faq scrollspy" id="faq">
     <section>
       <div class = "container">
         <h2 class = "faq-header" style = "padding-bottom: 50px;">frequently asked <span class="heavy">questions</span></h2>
@@ -149,17 +151,18 @@
             </li>
 
           </div>
+        </div>
       </ul>
       </div>
 
     </section>
   </div>
-  <div class = "schedule  light-blue darken-4">
+  <div class = "schedule scrollspy light-blue darken-4" id="schedule">
     <div class = "container">
     <h2  class = "white-text" style = "text-align: center"><span class="heavy">Splash Schedule</span></h2>
     <h5 class = "white-text" style = "padding-bottom: 50px; text-align: center">Each Splash Runs from 12pm to 4pm (unless otherwise noted)</h5>
 
-      <table id="schedule">
+      <table>
         <thead>
           <tr class = "white-text" >
               <th class="date">Date </th>
@@ -217,8 +220,8 @@
 
 
 
-  \
-  <div class = "registration-container">
+
+  <div class = "registration-container scrollspy" id="registration">
     <div class = "container">
 
       <div id="mc_embed_signup">
@@ -263,7 +266,7 @@
               <div class="response" id="mce-success-response" style="display:none"></div>
             </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ed4a703e69c0dfd4fdd88730f_2be610c50f" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large blue lighten-1"></div>
+            <div class="clear"><input type="submit" value="Register" name="subscribe" id="mc-embedded-subscribe" class="btn-large blue lighten-1"></div>
           </div>
         </form>
       </div>
@@ -286,6 +289,13 @@
 
     ga('create', 'UA-70717945-2', 'auto');
     ga('send', 'pageview');
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.scrollspy').scrollSpy({
+        scrollOffset: 0
+      });
+    });
   </script>
 </body>
 </html>
