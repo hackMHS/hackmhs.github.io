@@ -36,7 +36,7 @@ h5 {
 
 .mlh {
   max-width: 10%;
-  max-height: 10%
+  max-height: 10%;
   display: inline-block;
 }
 
@@ -135,6 +135,13 @@ footer {
 .s-image {
   max-height: 70px;
   margin-left: 30px;
+  max-width: 95%;
+}
+
+@media (max-width: 1200px) {
+  .s-image {
+    margin-left: 2.5%;
+  }
 }
 
 .s-image:hover {
