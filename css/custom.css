@@ -151,3 +151,53 @@ footer {
 
 
 /* Phone */
+schedule-container {
+  width: 100%;
+  /* TODO: set background color */
+}
+
+.schedule {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 2rem;
+}
+
+.schedule table {
+  border-collapse: collapse;
+}
+
+.schedule div table td:first-child {
+  width: 100%;
+  padding-right: 2rem;
+}
+
+.schedule div table td:last-child {
+  white-space: nowrap;
+  vertical-align: top;
+  padding-left: 3rem;
+  border-left: 1px solid #e0e0e0;
+}
+
+.schedule:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.saturday, .sunday {
+  float: left;
+  width: 100%;
+}
+
+.schedule .saturday h1, .schedule .sunday h1 {
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width:993px) {
+  .saturday,.sunday {
+    width: 50%;
+    padding: 2.5%;
+  }
+}
