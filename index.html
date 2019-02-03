@@ -504,10 +504,15 @@ $(document).ready(function(){
                           </label>
                           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                       </div>
-                      <div class="mc-field-group">
+                      <div class="mc-field-group size1of2">
                           <label for="mce-SCHOOL">School  <span class="asterisk">*</span>
                           </label>
                           <input type="text" value="" name="SCHOOL" class="required" id="mce-SCHOOL">
+                      </div>
+                      <div class="mc-field-group size1of2">
+                          <label for="mce-GRADYEAR">Expected Year of High School Graduation  <span class="asterisk">*</span>
+                          </label>
+                          <input type="number" name="GRADYEAR" class="required" value="" min="2019" max="2024" id="mce-GRADYEAR">
                       </div>
                       <div class="mc-field-group size1of2">
                           <label for="mce-PHONE">Phone Number </label>
@@ -546,24 +551,19 @@ $(document).ready(function(){
                               <li><input type="radio" value="Prefer not to say" name="GENDER" id="mce-GENDER-3"><label for="mce-GENDER-3">Prefer not to say</label></li>
                           </ul>
                       </div>
-                      <div class="mc-field-group">
-                          <label for="mce-GRADYEAR">Expected Year of High School Graduation  <span class="asterisk">*</span>
-                          </label>
-                          <input type="number" name="GRADYEAR" class="required" value="" min="2019" max="2024" id="mce-GRADYEAR">
-                      </div>
-                      <div class="mc-field-group size1of2">
+                      <div class="mc-field-group size1of2" style="display:none">
                           <label for="mce-GITHUB">Github Profile (Optional): </label>
                           <input type="text" value="" name="GITHUB" class="" id="mce-GITHUB">
                       </div>
-                      <div class="mc-field-group size1of2">
+                      <div class="mc-field-group size1of2" style="display:none">
                           <label for="mce-DEVPOST">Devpost Profile (Optional): </label>
                           <input type="text" value="" name="DEVPOST" class="" id="mce-DEVPOST">
                       </div>
-                      <div class="mc-field-group">
+                      <div class="mc-field-group" style="display:none">
                           <label for="mce-EXPERIENCE">Do you have any past STEM/hackathon experience? It's alright if you don't, you can tell us about your interest.</label>
                           <input type="text" value="" name="EXPERIENCE" class="" id="mce-EXPERIENCE">
                       </div>
-                      <div class="mc-field-group input-group size1of2">
+                      <div class="mc-field-group input-group size1of2" style="display:none">
                           <strong>Race</strong>
                           <ul><li><input type="checkbox" value="1" name="group[19505][1]" id="mce-group[19505]-19505-0"><label for="mce-group[19505]-19505-0">American Indian or Alaska Native</label></li>
                               <li><input type="checkbox" value="2" name="group[19505][2]" id="mce-group[19505]-19505-1"><label for="mce-group[19505]-19505-1">Asian (including Indian subcontinent and Philippines origin)</label></li>
@@ -574,7 +574,7 @@ $(document).ready(function(){
                               <li><input type="checkbox" value="2048" name="group[19505][2048]" id="mce-group[19505]-19505-6"><label for="mce-group[19505]-19505-6">Prefer not to say</label></li>
                           </ul>
                       </div>
-                      <div class="mc-field-group input-group size1of2">
+                      <div class="mc-field-group input-group size1of2" style="display:none">
                           <strong>Ethnicity </strong>
                           <ul><li><input type="checkbox" value="64" name="group[19509][64]" id="mce-group[19509]-19509-0"><label for="mce-group[19509]-19509-0">Cuban</label></li>
                               <li><input type="checkbox" value="128" name="group[19509][128]" id="mce-group[19509]-19509-1"><label for="mce-group[19509]-19509-1">Mexican</label></li>
